@@ -1,0 +1,55 @@
+
+
+
+html{
+    background: gray;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+#number{
+    width:10%;
+    border: 1px solid dimgray;
+    color: black;
+    background-color: lightgrey;
+}
+#result,
+#rlresult,
+#decimal,
+#binarydec,
+#newrl,
+#rldif{
+    width:90%;
+    border: 1px solid dimgray;
+    color: black;
+    background-color: lightgrey;
+}
+#canvas{
+    height: 350px;
+    width: 350px;
+
+}
+#img{
+    background: url("Screenshot_1.png")no-repeat;
+    visibility: hidden;
+
+    width: 1000px;
+    height: 500px;
+}
+#img2{
+    background: url("Screenshot_2.png")no-repeat;
+    visibility: hidden;
+
+    width: 1000px;
+    height: 500px;
+}
+#btn{
+    width:10%;
+    color: white;
+    background-color: green;
+    border: 1px solid dimgray;
+}
