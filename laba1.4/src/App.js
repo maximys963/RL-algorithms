@@ -1,50 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
+import React                from 'react';
+import { eNumberGenerator } from './utils/eNumberGenerator'
+
 import 'antd/dist/antd.css';
 import './App.css';
-import { Table } from 'antd'
 
-const dataSource = [
-    {
-        key: '1',
-        name: 'Mike',
-        age: 32,
-        address: '10 Downing Street',
-    },
-    {
-        key: '2',
-        name: 'John',
-        age: 42,
-        address: '10 Downing Street',
-    },
-];
-
-const columns = [
-    {
-        title: 'Name',
-        dataIndex: 'name',
-        key: 'name',
-    },
-    {
-        title: 'Age',
-        dataIndex: 'age',
-        key: 'age',
-    },
-    {
-        title: 'Address',
-        dataIndex: 'address',
-        key: 'address',
-    },
-];
+const X = 323;
 
 function App() {
+
+    const eNumbers = eNumberGenerator(100, 14, X);
+    console.log(eNumbers);
+
+
   return (
     <div className="App">
       Hello World !
-        <Table
-            dataSource={dataSource} columns={columns}
-            pagination  = {false}
-        />
 
     </div>
   );
