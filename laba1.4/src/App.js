@@ -1,6 +1,8 @@
-import React                from 'react';
-import { eNumberGenerator } from './utils/eNumberGenerator'
-import { convertToRL }      from './utils/convertToRL';
+/* eslint-disable react/jsx-filename-extension */
+import React from 'react';
+import { eNumberGenerator } from './utils/eNumberGenerator';
+import { convertToRL } from './utils/convertToRL';
+import { rlMagicAddition } from './utils/rlMagicAddition';
 
 import 'antd/dist/antd.css';
 import './App.css';
@@ -9,31 +11,34 @@ const X = 320;
 const initialValue = 100;
 
 function App() {
+  const eNumbers = eNumberGenerator(14, X);
+  console.log(eNumbers);
 
-    const eNumbers = eNumberGenerator( 14, X);
-    console.log(eNumbers);
+  const miserableValuesSum = eNumbers.reduce((acc, value) => (
+    acc + value
+  ));
 
-    const miserableValuesSum = eNumbers.reduce((acc, value) => (
-        acc + value
-    ));
+  console.log(miserableValuesSum);
 
-    console.log(miserableValuesSum);
+  const sum = initialValue + miserableValuesSum;
 
-    const sum = initialValue + miserableValuesSum;
+  console.log(sum);
 
-    console.log(sum);
+  const difference = initialValue + miserableValuesSum;
 
-    const difference = initialValue + miserableValuesSum;
+  console.log(difference);
 
-    console.log(difference);
+  const rlNumbers = eNumbers.map((number) => (convertToRL(`${number}`)));
 
-    convertToRL(20, 22);
+  console.log(rlNumbers);
+
+  rlMagicAddition(rlNumbers[0], rlNumbers[1]);
+
 
 
   return (
     <div className="App">
       Hello World !
-
     </div>
   );
 }
