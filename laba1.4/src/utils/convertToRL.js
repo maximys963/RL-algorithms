@@ -1,29 +1,18 @@
-const button = document.getElementById('btn');
-button.addEventListener('click', getInput);
-const Arr1 = [];
-function getInput() {
+export function convertToRL(number1, number2) {
     let RL1 = [];
     let RL2 = [];
 ///////////////////////////////////////////////////
 
-    let input = document.getElementById('number');
-    let number1 = input.value;
-
     let obj = parseFloat(number1).toString(2);
 ////////////////////////////////////////////////////
-    let input2 = document.getElementById('number2');
-    let number2 = input2.value;
 
     let obj2 = parseFloat(number2).toString(2);
 //////////////////////////////////////////////////////
-    let binOut = document.getElementById('binary');
-    binOut.value = obj;
-    let binOut2 = document.getElementById('binary2');
-    binOut2.value = obj2;
+
     if(obj === '0' || obj2 === "0"  ){
         if(obj === "0" && obj2 !=="0"){
-            const rlOutput1 = document.getElementById('rlnumber1');
-            rlOutput1.value = "0";
+            // const rlOutput1 = document.getElementById('rlnumber1');
+            // rlOutput1.value = "0";
             const NumSign2 = number2.split('');
             if (NumSign2[0] === "-") {
                 RL2[0] = 1;
@@ -287,8 +276,10 @@ function getInput() {
             realRL2[i] = RL2[i+4];
         }
 
-        // console.log(realRL1);
-        // console.log(realRL2);
+        console.log('realRL1');
+        console.log(realRL1);
+        console.log('realRL2');
+        console.log(realRL2);
 
 
         const rlOutput1 = document.getElementById('rlnumber1');
@@ -387,4 +378,3 @@ function getInput() {
     }
 
 }
-
