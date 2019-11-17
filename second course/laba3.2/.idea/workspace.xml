@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf0ae555-d677-4b17-b77e-9617616d4f01" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../laba1.4/src/utils/rlMagicAddition.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../laba1.4/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../laba1.4/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../laba1.4/src/utils/convertToRL.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../laba1.4/src/utils/convertToRL.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../laba1.4/src/utils/eNumberGenerator.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../laba1.4/src/utils/eNumberGenerator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../laba1.4/src/utils/rlMagicAddition.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../laba1.4/src/utils/rlMagicAddition.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

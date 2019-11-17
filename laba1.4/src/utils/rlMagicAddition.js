@@ -35,7 +35,7 @@ export function rlMagicAddition(rl1, rl2) {
   const rl2TailStr = rl2.split('.').splice(2);
 
   const rl1TailNumb = rl1TailStr.map((sting) => (Number(sting)));
-  const rl2TailNumb = rl2TailStr.map((string) => Number(string));
+  const rl2TailNumb = rl2TailStr.map((string) => (Number(string)));
 
   const rlSumRaw = [...rl1TailNumb, ...rl2TailNumb];
 
@@ -45,7 +45,7 @@ export function rlMagicAddition(rl1, rl2) {
 
   const rlSum = convertToStandardForm(rlSumArray);
 
-  console.log(rlSum);
+  // console.log(rlSum);
 
-  return null;
+  return rlSum;
 }
