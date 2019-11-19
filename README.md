@@ -1,2 +1,2 @@
 # RL-algorithms
-[Repo List](assets/triumph.jpg)
+[Repo List](assets/triumph.png)
