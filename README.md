@@ -1,3 +1,3 @@
-# Welcome to RL Hell my friend
+# Welcome to RL Hell 
 
 ![Repo List](assets/triumph.png)
