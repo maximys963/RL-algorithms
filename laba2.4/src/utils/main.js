@@ -350,6 +350,7 @@ function getInput() {
                 }
             }
         }
+        // console.log(RL_STRING);
 
         let RL_RESULT = [];
         let z = 0;
@@ -360,6 +361,7 @@ function getInput() {
                 z++;
             }
         }
+        // console.log(RL_RESULT);
 
 
         if(RL1[0] == '0' && RL2[0] == '0' || RL1[0] == '1' && RL2[0] == '1'){
@@ -375,6 +377,7 @@ function getInput() {
             RL_RESULT[2] =  RL_RESULT.length -4;
             RL_RESULT[3] = "."
         }
+        // console.log(RL_RESULT);
 
 
         let final_rez = document.getElementById('result');
